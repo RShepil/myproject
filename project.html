@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>ProjectProfit</title>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <section class="header">
+        <header>
+            <img src="img/Лого4.png" height="70" width="120" alt="ProjectProfit">
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Проекты</a>
+                <a href="project.html">Создать проект</a>
+                <a href="account.html">Вход</a>
+            </nav>
+        </header>
+    </section>
+
+    <section class="project-container">
+        <div class="project-wrapper">
+            <h2>Создание проекта</h2>
+            <ol><b>Как это работает?</b>
+                <li>Вы публикуете свой проект.</li>
+                <li>Устанавливаете цель.</li>
+                <li>Ваш проект представляется инвесторам.</li>
+            </ol>
+        </div>
+
+        <section class="quote">
+            <div class="wrapper">
+                <div class="quote-wrapper">
+                    <form class="form" id="form" action="" method="post">
+                        <h2>Данные заявителя</h2>
+                        <input class="input" type="text" name="lastname" placeholder="Фамилия (Обязательно)" required="">
+                        <input class="input" type="text" name="firstname" placeholder="Имя (Обязательно)" required="">
+                        <input class="input" type="text" name="middlename" placeholder="Отчество">
+                        <input class="input" type="text" name="city" placeholder="Город">
+                        <input class="input" type="tel" name="number" placeholder="Контактный телефон">
+                        <input class="input" type="email" name="email" placeholder="E-mail (Обязательно)" required="">
+                        <h2>О проекте</h2>
+                        <input class="input-file inputfile" id="upload" type="file" name="file"  accept="image/jpeg,image/png" method="post" required="" data-multiple-caption="{count} files selected" multiple />
+                        <label for="upload"><span>Загрузить фотографию</span><img src="img/add.png" alt="Добавить"></label>
+                        <input class="input" type="text" name="projectname" placeholder="Название проекта или компании (Обязательно)" required="">
+                        <textarea class="input input-txt" name="msg" placeholder="Описание проекта... (Обязательно)" required=""></textarea>
+                        <input class="input" type="number" name="money" placeholder="Размер инвестиций, руб. (Обязательно)" required="">
+                        <input class="input" type="number" name="conditions" placeholder="Условия, % (Обязательно)" required="">
+                        <input class="input" type="number" name="term" placeholder="Срок окупаемости, мес. (Обязательно)" required="">
+                        <button class="btn-submit" type="submit" name="send_other">Добавить проект</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer style="border-top: 5px solid #ffdc5c;">
+        <div class="basement">
+            <div class="footer">
+                <span>© Руслан Шепиль</span>
+                <div class="contacts">
+                    <a href="#"><img class="contacts__img" src="img/telegram.png" alt=""></a>
+                    <a href="#"><img class="contacts__img" src="img/vk.png" alt=""></a>
+                    <a href="#"><img class="contacts__img" src="img/twitter.png" alt=""></a>
+                    <a href="#"><img class="contacts__img" src="img/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/file.js"></script>
+
+</body>
+
+</html>

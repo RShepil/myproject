@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>ProjectProfit</title>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <section class="header">
+        <header>
+            <img src="img/Лого4.png" height="70" width="120" alt="ProjectProfit">
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Проекты</a>
+                <a href="project.html">Создать проект</a>
+                <a href="account.html">Вход</a>
+            </nav>
+        </header>
+    </section>
+
+    <section class="account-container">
+            <div class="account-wrapper">
+                <h2>Войти</h2>
+                <div class="account-quote-wrapper">
+                    <form id="form" action="" method="post">
+                        <div class="account-position">
+                            <div class="account-items">
+                                <h4>Зарегистрированный пользователь</h4>
+                                <input class="input" type="text" name="login" placeholder="Введите ваш логин" required="">
+                                <input class="input" type="password" name="password" placeholder="Введите ваш пароль" required="">
+                                <button class="btn-submit" type="submit" name="send_other">Войти</button>
+                            </div>    
+                        </div>
+                    </form>
+                    <form id="form" action="" method="post"> 
+                        <div class="account-position">
+                            <div class="account-items box">
+                                <h4>Новый пользователь</h4>
+                                <input class="input" type="text" name="login" placeholder="Введите логин" required="">
+                                <input class="input" type="email" name="email" placeholder="Введите E-mail" required="">
+                                <input class="input" type="password" name="password" placeholder="Введите пароль" required="">
+                                <input class="input" type="password" name="password" placeholder="Подтвердите пароль" required="">
+                                <p>При регистрации вы соглашаетесь с нашими Условиями пользования , а также Политикой Конфиденциальности и Cookie</p>
+                                <button class="btn-submit" type="submit" name="send_other">Зарегистрироваться</button>
+                            </div>    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer style="border-top: 5px solid #ffdc5c;">
+        <div class="basement">
+            <div class="footer">
+                <span>© Руслан Шепиль</span>
+                <div class="contacts">
+                    <a href="#"><img class="contacts__img" src="img/telegram.png" alt=""></a>
+                    <a href="#"><img class="contacts__img" src="img/vk.png" alt=""></a>
+                    <a href="#"><img class="contacts__img" src="img/twitter.png" alt=""></a>
+                    <a href="#"><img class="contacts__img" src="img/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/file.js"></script>
+
+</body>
+
+</html>
